@@ -4,13 +4,17 @@ agent: build
 model: opencode/gpt-5.2-codex
 ---
 
-Use the Linear MCP to fetch all issues assigned to "me" that are not completed or cancelled. You are OAuthed so you can fetch my username on Linear to use as assignee.
+IMPORTANT: NEVER INVENT INFORMATION IF LINEAR MCP IS NOT AVAILABLE. If unable to fetch data, ask the user for details instead.
+
+If a specific issue ID is provided as a parameter, use the Linear MCP to fetch the details of that issue directly.
+
+Otherwise, use the Linear MCP to fetch all issues assigned to "me" that are not completed or cancelled. You are OAuthed so you can fetch my username on Linear to use as assignee.
 
 Sort these issues by priority, with priority 1 (Urgent) first, then 2 (High), 3 (Normal), 4 (Low). Ignore issues with priority 0 (No priority).
 
 Select the highest priority issue from this sorted list.
 
-Retrieve the full details of this issue, including its branch name, labels, project, title, and description.
+Retrieve the full details of the selected issue, including its branch name, labels, project, title, and description.
 
 Based on the issue's labels, project name, title, and description, determine which specific app or package this issue relates to.
 

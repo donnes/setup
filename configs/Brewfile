@@ -13,6 +13,7 @@ brew "gcc"
 brew "make"
 brew "curl"
 brew "unzip"
+brew "tree-sitter"
 brew "gh"
 brew "lazygit"
 

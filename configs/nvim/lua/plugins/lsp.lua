@@ -26,7 +26,6 @@ return {
       "hrsh7th/cmp-nvim-lsp",
     },
     config = function()
-      local lspconfig = require("lspconfig")
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
       local on_attach = function(_, buffer)
@@ -43,22 +42,22 @@ return {
         map("n", "ws", vim.lsp.buf.workspace_symbol, "Workspace symbols")
       end
 
-      lspconfig.vtsls.setup({
+      vim.lsp.config("vtsls", {
         capabilities = capabilities,
         on_attach = on_attach,
       })
 
-      lspconfig.tailwindcss.setup({
+      vim.lsp.config("tailwindcss", {
         capabilities = capabilities,
         on_attach = on_attach,
       })
 
-      lspconfig.pyright.setup({
+      vim.lsp.config("pyright", {
         capabilities = capabilities,
         on_attach = on_attach,
       })
 
-      lspconfig.gopls.setup({
+      vim.lsp.config("gopls", {
         capabilities = capabilities,
         on_attach = on_attach,
         settings = {
@@ -70,6 +69,11 @@ return {
           },
         },
       })
+
+      vim.lsp.enable("vtsls")
+      vim.lsp.enable("tailwindcss")
+      vim.lsp.enable("pyright")
+      vim.lsp.enable("gopls")
     end,
   },
 }

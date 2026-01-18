@@ -2,6 +2,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 vim.opt.number = true
+vim.opt.runtimepath:append(vim.fn.stdpath("data") .. "/site")
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.termguicolors = true

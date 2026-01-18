@@ -10,6 +10,7 @@ fzf
 base-devel
 curl
 unzip
+tree-sitter
 github-cli
 lazygit
 

@@ -9,6 +9,7 @@ map("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Help tags" })
 
 map("n", "<leader>gd", ":Telescope git_status<CR>", { desc = "Git status" })
 
+map("n", "<leader>w", ":write<CR>", { desc = "Save file" })
 map("n", "<leader>bd", ":bdelete<CR>", { desc = "Delete buffer" })
 
 map("n", "<leader>qq", ":qa<CR>", { desc = "Quit all" })
