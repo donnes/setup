@@ -1,6 +1,8 @@
 ---
 description: Removes AI-generated slop.
+model: opencode/grok-code
 ---
+
 # Remove AI code slop
 
 Check the diff against main, and remove all AI-generated slop introduced in this branch. If currently on main, ask me how far we should look back.

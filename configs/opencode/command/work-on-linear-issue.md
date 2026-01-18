@@ -1,7 +1,7 @@
 ---
 description: Work on the next highest priority Linear issue assigned to me
 agent: plan
-model: zen/gpt-5.2-codex
+model: opencode/gpt-5.2-codex
 ---
 
 Use the Linear API to fetch all issues assigned to "me" that are not completed or cancelled.

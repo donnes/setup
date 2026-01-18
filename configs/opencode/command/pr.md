@@ -1,7 +1,7 @@
 ---
 description: Create a pull request with commit (enforces partial commits for large changes)
 agent: build
-model: zen/grok-code-fast-1
+model: opencode/grok-code
 ---
 
 Check the number of changed files with `git diff --name-only main...HEAD | wc -l`

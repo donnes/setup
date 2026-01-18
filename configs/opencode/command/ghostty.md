@@ -1,7 +1,7 @@
 ---
 description: Help make changes to my Ghostty (terminal emulator) settings
 agent: build
-model: zen/grok-code-fast-1
+model: opencode/grok-code
 ---
 
 Run "ghostty +show-config --default --docs" to see the full guide on how to configure my terminal emulator ghostty. In this session I want you to help me get it configured. When I tell you
