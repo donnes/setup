@@ -65,8 +65,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-
-
 # Eza
 alias ls="eza --color=auto --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
@@ -82,5 +80,5 @@ export EDITOR="c --wait"
 alias ws="windsurf"
 
 # opencode
-export PATH=$HOME/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 alias oc="opencode"
