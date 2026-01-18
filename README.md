@@ -14,11 +14,7 @@ A CLI tool to manage dotfiles and configurations across machines. Sync configs b
 ## Installation
 
 ```bash
-# Clone the repo
-git clone <repo-url> ~/Git/setup
-cd ~/Git/setup
-
-# Install dependencies
+# From inside the repo
 bun install
 
 # Link globally
@@ -58,19 +54,16 @@ ds
 ### New Machine Setup
 
 ```bash
-# 1. Clone repo
-git clone <repo-url> ~/Git/setup && cd ~/Git/setup
-
-# 2. Install bun (if needed)
+# 1. Install bun (if needed)
 curl -fsSL https://bun.sh/install | bash
 
-# 3. Install and link
+# 2. Install and link
 bun install && bun link
 
-# 4. Export configs (creates symlinks)
+# 3. Export configs (creates symlinks)
 ds export
 
-# 5. Install dependencies
+# 4. Install dependencies
 ds deps
 ```
 
@@ -87,7 +80,7 @@ ds push
 ### After Moving the Repo
 
 ```bash
-# If you move ~/Git/setup to ~/dotfiles
+# Example: move the repo somewhere else
 mv ~/Git/setup ~/dotfiles
 cd ~/dotfiles
 
