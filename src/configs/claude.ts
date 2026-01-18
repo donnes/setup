@@ -22,6 +22,7 @@ class ClaudeConfig implements ConfigHandler {
     "settings.json",
     "CLAUDE.md",
     "commands",
+    "skills",
   ];
 
   existsOnSystem(): boolean {

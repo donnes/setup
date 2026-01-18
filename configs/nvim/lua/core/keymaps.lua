@@ -1,0 +1,14 @@
+local map = vim.keymap.set
+
+map("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file tree" })
+
+map("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find files" })
+map("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Live grep" })
+map("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "List buffers" })
+map("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Help tags" })
+
+map("n", "<leader>gd", ":Telescope git_status<CR>", { desc = "Git status" })
+
+map("n", "<leader>bd", ":bdelete<CR>", { desc = "Delete buffer" })
+
+map("n", "<leader>qq", ":qa<CR>", { desc = "Quit all" })

@@ -3,7 +3,7 @@ import { repoPaths } from "../utils/paths";
 import { exists, ensureParentDir } from "../utils/fs";
 import { exec } from "../utils/shell";
 import { isMacOS, isArch, getPackageManager } from "../utils/platform";
-import { writeFileSync, readFileSync } from "fs";
+import { writeFileSync } from "fs";
 
 class PackagesConfig implements ConfigHandler {
   name = "packages";
@@ -66,6 +66,14 @@ class PackagesConfig implements ConfigHandler {
   private filterEssentialBrewPackages(lines: string[]): string {
     // Essential packages to keep
     const essentialFormulae = new Set([
+      "neovim",
+      "ripgrep",
+      "fd",
+      "fzf",
+      "gcc",
+      "make",
+      "curl",
+      "unzip",
       "gh",
       "lazygit",
       "fnm",
@@ -163,6 +171,13 @@ class PackagesConfig implements ConfigHandler {
 
   private filterEssentialArchPackages(packages: string[]): string[] {
     const essential = new Set([
+      "neovim",
+      "ripgrep",
+      "fd",
+      "fzf",
+      "base-devel",
+      "curl",
+      "unzip",
       "git",
       "github-cli",
       "lazygit",

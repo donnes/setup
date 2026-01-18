@@ -21,6 +21,7 @@ export const systemPaths = {
     ? join(HOME, "Library", "Application Support", "com.mitchellh.ghostty", "config")
     : join(HOME, ".config", "ghostty", "config"),
   ssh: join(HOME, ".ssh", "config"),
+  neovim: join(HOME, ".config", "nvim"),
   ohmyzsh: join(HOME, ".oh-my-zsh"),
 };
 
@@ -32,6 +33,7 @@ export const repoPaths = {
   claude: join(CONFIGS_DIR, "claude"),
   ghostty: join(CONFIGS_DIR, "ghostty", "config"),
   ssh: join(CONFIGS_DIR, "ssh", "config"),
+  neovim: join(CONFIGS_DIR, "nvim"),
   brewfile: join(CONFIGS_DIR, "Brewfile"),
   packages: join(CONFIGS_DIR, "packages.txt"),
 };

@@ -3,6 +3,13 @@
 # Install with: yay -S --needed - < packages.txt
 
 # Core dev tools
+neovim
+ripgrep
+fd
+fzf
+base-devel
+curl
+unzip
 github-cli
 lazygit
 

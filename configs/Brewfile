@@ -5,6 +5,14 @@
 tap "jesseduffield/lazygit"
 
 # Core dev tools
+brew "neovim"
+brew "ripgrep"
+brew "fd"
+brew "fzf"
+brew "gcc"
+brew "make"
+brew "curl"
+brew "unzip"
 brew "gh"
 brew "lazygit"
 

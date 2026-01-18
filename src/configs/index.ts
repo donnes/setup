@@ -4,6 +4,7 @@ import { claudeConfig } from "./claude";
 import { ghosttyConfig } from "./ghostty";
 import { sshConfig } from "./ssh";
 import { packagesConfig } from "./packages";
+import { neovimConfig } from "./neovim";
 import type { ConfigHandler, ConfigName } from "../types";
 
 export const configs: Record<string, ConfigHandler> = {
@@ -13,6 +14,7 @@ export const configs: Record<string, ConfigHandler> = {
   claude: claudeConfig,
   ghostty: ghosttyConfig,
   ssh: sshConfig,
+  neovim: neovimConfig,
   packages: packagesConfig,
 };
 
@@ -42,6 +44,11 @@ export const configGroups = {
     description: "~/.ssh/config",
     configs: ["ssh"],
   },
+  neovim: {
+    name: "Neovim",
+    description: "~/.config/nvim/",
+    configs: ["neovim"],
+  },
   packages: {
     name: "Packages",
     description: "Brewfile / packages.txt",
@@ -63,4 +70,4 @@ export function getConfigsByGroup(groupName: string): ConfigHandler[] {
   return group.configs.map(name => configs[name]).filter(Boolean);
 }
 
-export { zshrcConfig, bashrcConfig, opencodeConfig, claudeConfig, ghosttyConfig, sshConfig, packagesConfig };
+export { zshrcConfig, bashrcConfig, opencodeConfig, claudeConfig, ghosttyConfig, sshConfig, neovimConfig, packagesConfig };

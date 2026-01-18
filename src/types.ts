@@ -58,6 +58,7 @@ export type ConfigName =
   | "claude"
   | "ghostty"
   | "ssh"
+  | "neovim"
   | "packages";
 
 export interface DependencyStatus {
