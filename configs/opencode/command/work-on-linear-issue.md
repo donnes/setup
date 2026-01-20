@@ -6,7 +6,9 @@ model: opencode/gpt-5.2-codex
 
 IMPORTANT: NEVER INVENT INFORMATION IF LINEAR MCP IS NOT AVAILABLE. If unable to fetch data, ask the user for details instead.
 
-If a specific issue ID is provided as a parameter, use the Linear MCP to fetch the details of that issue directly.
+ARGUMENTS: $ARGUMENTS
+
+If a specific issue ID is provided as a argument (e.g. JOB-XXX), use the Linear MCP to fetch the details of that issue directly.
 
 Otherwise, use the Linear MCP to fetch all issues assigned to "me" that are not completed or cancelled. You are OAuthed so you can fetch my username on Linear to use as assignee.
 

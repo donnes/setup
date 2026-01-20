@@ -82,3 +82,6 @@ alias ws="windsurf"
 # opencode
 export PATH="$HOME/.opencode/bin:$PATH"
 alias oc="opencode"
+
+# Claue Code
+alias cc="claude"
