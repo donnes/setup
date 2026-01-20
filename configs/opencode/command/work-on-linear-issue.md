@@ -1,7 +1,7 @@
 ---
 description: Work on the next highest priority Linear issue assigned to me
 agent: build
-model: opencode/gpt-5.2-codex
+model: opencode/grok-code
 ---
 
 IMPORTANT: NEVER INVENT INFORMATION IF LINEAR MCP IS NOT AVAILABLE. If unable to fetch data, ask the user for details instead.
