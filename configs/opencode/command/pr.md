@@ -4,6 +4,20 @@ agent: build
 model: opencode/grok-code
 ---
 
+Check the current branch with `git branch --show-current`
+
+If the current branch is 'main' or 'master':
+- Inform the user: "Direct commits to the main branch are not allowed. Creating a new branch automatically."
+- Analyze the changes with `git diff` to understand the context.
+- Generate a descriptive branch name based on the changes (e.g., 'feature/add-user-auth', 'fix/login-validation', or 'refactor/database-schema').
+- Create the new branch with `git checkout -b <generated-branch-name>`
+- Proceed with the rest of the command.
+
+If the current branch is not 'main' or 'master':
+- Inform the user: "You are currently on branch '<current-branch>'. Do you want to commit and push changes to this branch and create a PR from it? (y/n)"
+- If yes, proceed with the rest of the command.
+- If no, analyze the changes with `git diff`, generate a new descriptive branch name, create it with `git checkout -b <new-generated-branch-name>`, and proceed.
+
 Check the number of changed files with `git diff --name-only main...HEAD | wc -l`
 
 If the number is greater than 10, output instructions for the user to manually create partial commits (e.g., using `git add -p` or staging specific files) and then re-run this command. Do not proceed with committing or PR creation.
