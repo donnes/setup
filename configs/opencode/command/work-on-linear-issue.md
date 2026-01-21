@@ -1,6 +1,6 @@
 ---
 description: Work on the next highest priority Linear issue assigned to me
-agent: build
+agent: plan
 model: opencode/grok-code
 ---
 
@@ -20,9 +20,13 @@ Retrieve the full details of the selected issue, including its branch name, labe
 
 Based on the issue's labels, project name, title, and description, determine which specific app or package this issue relates to.
 
+BEFORE START PLANNING, DO:
+
 Create a new git branch using the issue's suggested branch name.
 
 Move issue to status In Progress when start working.
+
+THEN:
 
 Output a summary including:
 - Issue ID and title
@@ -30,4 +34,5 @@ Output a summary including:
 - Determined project/app
 - Branch name created
 
-Enter in Plan mode and start planning the implementation.
+NOW YOU CAN START PLANNING AFTER MAKING SURE WE CREATE THE BRANCH AND UPDATES ISSUE STATUS.
+

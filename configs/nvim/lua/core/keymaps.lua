@@ -12,4 +12,7 @@ map("n", "<leader>gd", ":Telescope git_status<CR>", { desc = "Git status" })
 map("n", "<leader>w", ":write<CR>", { desc = "Save file" })
 map("n", "<leader>bd", ":bdelete<CR>", { desc = "Delete buffer" })
 
+map("n", "<leader>q", ":q<CR>", { desc = "Quit" })
+map("n", "<leader>f", ":lua require('conform').format()<CR>", { desc = "Format file" })
+
 map("n", "<leader>qq", ":qa<CR>", { desc = "Quit all" })
