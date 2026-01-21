@@ -17,6 +17,12 @@ require("core.options")
 require("core.keymaps")
 require("core.autocmds")
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    require("nvim-tree.api").tree.open()
+  end,
+})
+
 require("lazy").setup("plugins", {
   ui = {
     border = "rounded",
